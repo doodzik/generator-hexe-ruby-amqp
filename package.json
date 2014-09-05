@@ -1,0 +1,36 @@
+{
+  "name": "generator_hexe_ruby_amqp",
+  "version": "0.0.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "generators/app/index.js",
+  "repository": "doodzik/generator_hexe_ruby_amqp",
+  "author": {
+    "name": "Frederik Dudzik",
+    "email": "",
+    "url": "https://github.com/doodzik"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "yeoman-generator": "~0.16.0",
+    "chalk": "~0.4.0",
+    "yosay": "^0.1.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}
