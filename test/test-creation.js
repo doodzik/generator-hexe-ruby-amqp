@@ -10,7 +10,7 @@ describe('generator hexe ruby amqp', function () {
         return done(err);
       }
 
-      this.app = helpers.createGenerator('hexe_ruby_amqp:app', [
+      this.app = helpers.createGenerator('hexe-ruby-amqp:app', [
         '../../adapter'
       ]);
       done();

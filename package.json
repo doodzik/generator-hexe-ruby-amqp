@@ -1,10 +1,10 @@
 {
-  "name": "generator_hexe_ruby_amqp",
+  "name": "generator-hexe-ruby-amqp",
   "version": "0.0.0",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "generators/app/index.js",
-  "repository": "doodzik/generator_hexe_ruby_amqp",
+  "repository": "doodzik/generator-hexe-ruby-amqp",
   "author": {
     "name": "Frederik Dudzik",
     "email": "",

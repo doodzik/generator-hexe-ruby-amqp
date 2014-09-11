@@ -3,4 +3,4 @@ node_js:
   - '0.10'
 before_install:
   - currentfolder=${PWD##*/}
-  - if [ "$currentfolder" != 'generator_hexe_ruby_amqp' ]; then cd .. && eval "mv $currentfolder generator_hexe_ruby_amqp" && cd generator_hexe_ruby_amqp; fi
+  - if [ "$currentfolder" != 'generator-hexe-ruby-amqp' ]; then cd .. && eval "mv $currentfolder generator-hexe-ruby-amqp" && cd generator-hexe-ruby-amqp; fi
