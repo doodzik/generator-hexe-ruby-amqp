@@ -27,7 +27,7 @@ namespace :amqp do
     end
   end
 
-  task :before do
+  task :require do
     Amqp.load!(Bunny.new(:automatically_recover => false))
   end
 end
