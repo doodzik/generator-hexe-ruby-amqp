@@ -20,17 +20,17 @@ var AmqpRubyHexeGenerator = yeoman.generators.Base.extend({
     }
 
     //adapters
-    this.template('_rpc.rb', 'adapters/amqp/rpc.rb', context);
-    this.template('_worker.rb', 'adapters/amqp/worker.rb', context);
+    this.template('_rpc.rb', 'adapters/amqp_rpc.rb', context);
+    this.template('_worker.rb', 'adapters/amqp_worker.rb', context);
 
     this.template(
       '_worker_spec.rb',
-      'spec/adapters/amqp/worker_spec.rb',
+      'spec/adapters/amqp_worker_spec.rb',
       context
     );
     this.template(
       '_rpc_spec.rb',
-      'spec/adapters/amqp/rpc_spec.rb',
+      'spec/adapters/amqp_rpc_spec.rb',
       context
     );
 

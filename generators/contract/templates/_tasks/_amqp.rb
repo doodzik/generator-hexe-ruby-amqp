@@ -7,7 +7,7 @@ namespace :amqp do
 
   task :serve_worker do
     begin
-      require "#{ENV['BASEDIR']}/adapters/amqp/worker.rb"
+      require "#{ENV['BASEDIR']}/adapters/amqp_worker.rb"
       Amqp.load!(Bunny.new(:automatically_recover => false))
       Amqp.worker('<%= Service %>', Amqp::Worker)
     rescue Interrupt => _
@@ -18,7 +18,7 @@ namespace :amqp do
 
   task :serve_rpc do
     begin
-      require "#{ENV['BASEDIR']}/adapters/amqp/rpc.rb"
+      require "#{ENV['BASEDIR']}/adapters/amqp_rpc.rb"
       Amqp.load!(Bunny.new(:automatically_recover => false))
       Amqp.rpc('<%= Service %>', Amqp::Rpc)
     rescue Interrupt => _
