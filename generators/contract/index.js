@@ -54,6 +54,7 @@ var AmqpRubyHexeGenerator = yeoman.generators.Base.extend({
       '_spec/_tasks/_amqp_spec.rb',
       'spec/tasks/amqp_spec.rb', context);
 
+    this.template('_spec/_support_amqp.rb', '_spec/support_amqp.rb', context);
   }
 
 
